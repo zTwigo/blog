@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to right, #7151e2, #4d7eda, #2121d6);
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+}

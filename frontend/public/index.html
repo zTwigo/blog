@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Loading up fonts -->
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap'>
+
+  <!-- Title of the page. -->
+  <title>Blog Card</title>
+
+  <!-- Here are all the CSS needed. -->
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/header.css">
+  <link rel="stylesheet" href="./style/general.css">
+  <link rel="stylesheet" href="./style/modal.css">
+
+</head>
+<body>
+  <div class="application">
+    <header>
+      BLOGGEST
+    </header>
+    <div class="container">
+        <div class="card">
+            <div class="card__header">
+                <img src="./images/pc_card.jpg" alt="card__image" class="card__image" width="600">
+            </div>
+            <div class="card__body">
+                <span class="tag tag-blue">Technology</span>
+                <h4>What's new in 2022 Tech</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+            </div>
+            <div class="card__footer">
+                <div class="user">
+                    <img src="https://i.pravatar.cc/40?img=1" alt="user__image" class="user__image">
+                    <div class="user__info">
+                        <h5>Jane Doe</h5>
+                        <small>2h ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__header">
+                <img src="./images/food_card.jpg" alt="card__image" class="card__image" width="600">
+            </div>
+            <div class="card__body">
+                <span class="tag tag-brown">Food</span>
+                <h4>Delicious Food</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+            </div>
+            <div class="card__footer">
+                <div class="user">
+                    <img src="https://i.pravatar.cc/40?img=2" alt="user__image" class="user__image">
+                    <div class="user__info">
+                        <h5>Jony Doe</h5>
+                        <small>Yesterday</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__header">
+                <img src="./images/race_card.jpg" alt="card__image" class="card__image" width="600">
+            </div>
+            <div class="card__body">
+                <span class="tag tag-red">Automobile</span>
+                <h4>Race to your heart content</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+            </div>
+            <div class="card__footer">
+                <div class="user">
+                    <img src="https://i.pravatar.cc/40?img=3" alt="user__image" class="user__image">
+                    <div class="user__info">
+                        <h5>John Doe</h5>
+                        <small>2d ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Adds a brand new blog -->
+    <div class="add-container">
+      <div class="add-card">
+        <button id="open-modal" class="add-card-button">
+          <p class="add-card-button-p">CREATE A NEW BLOG</p>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- At first the modal dialogue window will be not shown -->
+  <div id="modal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal-header">
+          What would you like your blog to be?
+        </div>
+        <div class="modal-main flex flex-center">
+          <div class="modal-main-modify-section">
+            <label for="titolo">Title</label>
+            <form id="add-upload-form-title" class="sec-2">
+                <img class="sec-2-img" src="./images/icons/card-text.svg" alt="">
+                <input id="js-input-title" class="pas js-input-password" type="text" name="password" placeholder="Title">
+            </form>
+          </div>
+          <div class="modal-main-modify-section">
+            <label for="titolo">Description</label>
+            <form id="add-upload-form-desc" class="sec-2">
+                <img class="sec-2-img" src="./images/icons/layout-text-window-reverse.svg" alt="">
+                <input id="js-input-desc" class="pas" type="text" name="password" placeholder="Description">
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div id="js-modal-footer-add" class="modal-footer-save flex flex-center">
+            <img src="./images/icons/modal/floppy-fill.svg" alt="">
+            <p>CREATE</p>
+          </div>
+          <div id="js-modal-footer-cancel" class="modal-footer-cancel flex flex-center">
+            <img src="./images/icons/modal/x-square-fill.svg" alt="">
+            <p>CANCEL</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Entry point -->
+  <script type="module" src="./scripts/index.js"></script>
+</body>
+</html>
