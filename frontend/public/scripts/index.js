@@ -13,11 +13,19 @@ document.getElementById('js-modal-footer-add').addEventListener('click', () => {
     // Get data
     const title = document.getElementById('js-input-title').value;
     const description = document.getElementById('js-input-desc').value;
-
-    createBlog(title, description)
+    const author = document.getElementById('js-input-author').value;
+    
+    createBlog(author, title, description)
     .then((response) => {
-        console.log(response)
-    });
+        return response.text();
+    })
+    .then((data) => {
+        // Get the JSON
+        const json = JSON.parse(data);
+
+        window.location.href = 'blogs.html?id=' + json.id; 
+    })
+    ;
 })
 
 // Shows up the dialogue window
