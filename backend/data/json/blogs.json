@@ -1,28 +1,5 @@
 {
     "blogs": [
-        {
-            "id": "82682178-abc9-4a20-8521-ac07c2792e41",
-            "author": "ernesto",
-            "title": "css",
-            "description": "html"
-        },
-        {
-            "id": "4df6fdf3-1d3a-40be-a5a1-bcb3cd4f081e",
-            "author": "angelo",
-            "title": "excel",
-            "description": "hhahahhaha"
-        },
-        {
-            "id": "74dbd200-1fe5-46bf-ad00-df45feba46be",
-            "author": "paolo",
-            "title": "viva",
-            "description": "la"
-        },
-        {
-            "id": "f2a764ce-cecc-4105-9759-f2f0eb7b6c2d",
-            "author": "alessio",
-            "title": "bici",
-            "description": "elettriche"
-        }
+        
     ]
 }
